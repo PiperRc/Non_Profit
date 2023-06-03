@@ -184,3 +184,13 @@ nav {
     outline:none;
     font-size: 2rem;;
 }
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    margin:0 1rem 0 1rem;
+}
+
+footer p span{
+    display: block;
+}
