@@ -3,60 +3,49 @@ import Template from "../layouts/Template.astro";
 ---
 
 <Template>
-    <div class="description">
-        <section class="mission">
-            <h2>OUR MISSION</h2>
-            <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Tempore eius eum quasi ut? Ex totam fuga, quos vitae suscipit
-                voluptatum officiis similique minima possimus quae maxime
-                exercitationem repudiandae rem vel. Consequuntur ea optio
-                nesciunt iure qui debitis commodi quasi eos laboriosam nam vitae
-                nulla fuga illo, distinctio totam voluptate est pariatur.
-                Tempore cupiditate, atque laudantium error dolor non voluptatum
-            </p>
+  <div class="introduction">
 
-            <a href="/about">READ MORE</a>
-        </section>
+    <section class="mission">
+      <h1>OUR MISSION</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sit amet
+        ultricies lectus. Praesent at metus felis. Nam rutrum risus id nisl
+        posuere pretium.
+      </p>
 
-        <section class="support">
-            <h2>LEARN HOW TO SUPPORT US</h2>
+      <a href="/about">Read More</a>
+    </section>
 
-            <div>
-                <a href="#">SUPPORT US</a>
-            </div>
-        </section>
 
-        <section class="news">
-            <h2>LATEST NEWS</h2>
-            <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Tempore eius eum quasi ut? Ex totam fuga, quos vitae suscipit
-                voluptatum officiis similique minima possimus quae maxime
-                exercitationem repudiandae rem vel. Consequuntur ea optio
-                nesciunt iure qui debitis commodi quasi eos laboriosam nam vitae
-                nulla fuga illo, distinctio totam voluptate est pariatur.
-                Tempore cupiditate, atque laudantium error dolor non voluptatum
-            </p>
 
-            <a href="/about">READ MORE</a>
-        </section>
+    <section class="support-us">
+      <h1>SUPPORT US!</h1>
+      <a href="/support">SUPPORT US</a>
+    </section>
 
-        <section class="subscribe">
-            <div>
-            <h2>SUBSCRIBE</h2>
-            <h3>Subscribe to stay in touch</h3>
 
-            <form action="">
-                <input
-                    type="text"
-                    placeholder="Enter your email here*"
-                    required
-                />
-                <button>Join</button>
-            </form>
-        </div>
-        </section>
 
-    </div>
+    <section class="news">
+      <h1>LATEST NEWS</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sit amet
+        ultricies lectus. Praesent at metus felis. Nam rutrum risus id nisl
+        posuere pretium.
+      </p>
+      <a href="/news">Read More</a>
+    </section>
+
+
+
+    <section class="connect">
+      <h1>STAY CONNECTED</h1>
+     
+      <form>
+          <label for="input">Get Email Updates</label>
+          <input type="text" id="input" placeholder="Enter your email*" required >
+          <button>Subscribe</button>
+      </form>
+
+
+  </div>
 </Template>
