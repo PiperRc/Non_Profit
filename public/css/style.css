@@ -326,3 +326,40 @@ div.support-details section:nth-child(4) p
     text-align: center;
     margin-top:3rem;
 }
+
+/* contact.html */
+.contact h1{
+    font-size: var(--heading-font);
+    text-align: center;
+    color: var(--heading-color);
+    font-weight: bold;
+    letter-spacing: .3rem;
+    margin-top:3rem;
+}
+
+.contact h1 span{
+    display: block;
+}
+
+.contact p{
+    text-align: center;
+    font-size: var(--paragraph-font);
+    margin-top: 3rem;
+}
+
+.contact div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top:5rem;
+}
+
+.contact div p{
+    font-size: 1.8rem;
+}
+.contact div p span{
+    display: block;
+}
+
+/* footer */
