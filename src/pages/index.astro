@@ -3,49 +3,48 @@ import Template from "../layouts/Template.astro";
 ---
 
 <Template>
-  <div class="introduction">
+  <div class="introduction-container">
+    <section class="introduction">
+      <section class="mission">
+        <h1>OUR MISSION</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sit
+          amet ultricies lectus. Praesent at metus felis. Nam rutrum risus id
+          nisl posuere pretium.
+        </p>
 
-    <section class="mission">
-      <h1>OUR MISSION</h1>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sit amet
-        ultricies lectus. Praesent at metus felis. Nam rutrum risus id nisl
-        posuere pretium.
-      </p>
+        <a href="/about">Read More</a>
+      </section>
 
-      <a href="/about">Read More</a>
-    </section>
+      <section class="support-us">
+        <h1>SUPPORT US!</h1>
+        <a href="/support">SUPPORT US</a>
+      </section>
 
+      <section class="news">
+        <h1>LATEST NEWS</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sit
+          amet ultricies lectus. Praesent at metus felis. Nam rutrum risus id
+          nisl posuere pretium.
+        </p>
+        <a href="/news">Read More</a>
+      </section>
 
+      <section class="connect">
+        <h1>STAY CONNECTED</h1>
 
-    <section class="support-us">
-      <h1>SUPPORT US!</h1>
-      <a href="/support">SUPPORT US</a>
-    </section>
-
-
-
-    <section class="news">
-      <h1>LATEST NEWS</h1>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sit amet
-        ultricies lectus. Praesent at metus felis. Nam rutrum risus id nisl
-        posuere pretium.
-      </p>
-      <a href="/news">Read More</a>
-    </section>
-
-
-
-    <section class="connect">
-      <h1>STAY CONNECTED</h1>
-     
-      <form>
+        <form>
           <label for="input">Get Email Updates</label>
-          <input type="text" id="input" placeholder="Enter your email*" required >
+          <input
+            type="text"
+            id="input"
+            placeholder="Enter your email*"
+            required
+          />
           <button>Subscribe</button>
-      </form>
-
-
+        </form>
+      </section>
+    </section>
   </div>
 </Template>

@@ -1,0 +1,57 @@
+ <footer>
+      
+      <a href="#" target="_blank"
+             rel="noopener noreferrer"><i class="fa-brands fa-facebook fa-2x"></i>
+      </a>
+
+
+
+         <a href="#" target="_blank" 
+         rel="noopener noreferrer"> <i class="fa-brands fa-instagram fa-2x"></i>
+        </a>
+
+
+         <!-- trigger modal -->
+
+         <i class="fa-sharp fa-solid fa-share-nodes fa-2x" data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+
+
+         <!-- Modal -->
+         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+             <div class="modal-dialog modal-dialog-centered">
+               <div class="modal-content">
+                 <div class="modal-header">
+                   <h1 class="modal-title fs-5" id="exampleModalLabel">SHARE!</h1>
+                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                 </div>
+           
+                 <div class="modal-body">
+                   
+                  <input type="text" value="https://carolparris.netlify.app/" readonly>
+                   
+                   <button type="button" class="btn btn-primary btn-sm">Copy</button>
+           
+                 </div>
+                 
+                 
+                 
+                 <div class="modal-footer">
+                   <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                 </div>
+                 
+               </div>
+             </div>
+           </div>
+         <!--  -->
+         
+         <p>
+          <span>
+            &copy Charlene Cottle World Foundation 2023
+          </span>
+          
+             <span>
+                 Made by <a href="https://cheyennepiper.com/" target="_blank"
+                     rel="noopener noreferrer">Cheyenne Piper</a>
+             </span>
+         </p>
+     </footer>

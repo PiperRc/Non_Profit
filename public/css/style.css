@@ -20,16 +20,11 @@ nav {
 
 body {
     font-size: 1.6rem;
+    user-select: none;
 
 }
 
-.about,
-.contact,
-.introduction,
-.news-html,
-.support-html {
-    min-height: 100vh;
-}
+
 
 /* navbar */
 .navbar-brand {
@@ -114,7 +109,13 @@ section.support-us a {
 
 }
 
+/* news-html */
 /* section.news  */
+div.news-html {
+    padding: 1rem;
+}
+
+
 section.news {
     background-color: #45B29D;
 }
@@ -183,6 +184,7 @@ section.about h1 {
     font-size: var(--heading-font);
     color: var(--heading-color);
     text-align: center;
+    font-weight: bold;
 }
 
 section.about p {
@@ -195,7 +197,13 @@ section.about span {
     margin-top: 2rem;
 }
 
-section.about img {
+div.about-container div {
+    width: 80%;
+    max-width: 550px;
+    margin: 0 auto;
+}
+
+div.about-container img {
     width: 100%;
 }
 
@@ -227,25 +235,24 @@ div.support-introduction p {
 }
 
 /* support-details */
-div.support-details {
-    border-top: 1px solid grey;
 
-}
-
-div.support-details div {
-    margin-top: 3rem;
-}
 
 div.support-details h1 {
-    margin-top: 2rem;
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 3rem;
     font-size: var(--heading-font);
     color: #254151;
     font-weight: bold;
+    padding-top: 2rem;
+    border-top: 2px solid grey;
+
 }
 
 div.support-details h1 span {
     display: block;
     text-align: center;
+
 
 }
 
@@ -253,6 +260,7 @@ div.support-details h1 span {
 div.support-details div {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr;
+    margin-top: 3rem;
 
 }
 
@@ -277,6 +285,7 @@ div.support-details section p {
 div.support-details section h2 {
     font-size: 2.4rem;
     margin-top: 3rem;
+    font-weight: bold;
 }
 
 div.support-details section p {
@@ -376,38 +385,36 @@ div.support-details section:nth-child(4) p {
 }
 
 /* footer */
-footer {
-    /* display: none; */
-    background-color: #eaeae8;
-    padding-top: 6rem;
 
-
-}
-
-footer p {
-    margin-top: 3rem;
-    margin-bottom: 0;
-    font-size: 1.1rem;
-}
-
-footer p span {
-    display: block;
-}
 
 @media screen and (min-width:800px) {
 
-    nav {
-        position: fixed;
-    }
+
+
+    .navbar-nav {}
 
     /* div.introduction */
 
+    div.introduction-container {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom:20rem;
+        margin-top:10rem;
+    }
 
-    div.introduction section {
+    section.introduction {
+        min-height: 80%;
+        width: 90%;
+
+    }
+
+    section.introduction section {
         padding: 0;
     }
 
-    div.introduction,
+    section.introduction,
     div.support-details div {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
@@ -438,33 +445,66 @@ footer p span {
 
     /* about.html */
 
+    div.about-container {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* background-color: #f4ce50;
+        background-color: #B2BEB5;
+        background-color: #D3D3D3; */
+        background-color: #E5E4E2;
+    }
+
+    section.about {
+        margin-top: 10rem;
+        background-color: white;
+        border-radius: 2rem;
+        width: 85%;
+
+    }
+
+    section.about h1 {
+        padding-top: 5rem;
+        font-size: 3.5rem;
+    }
+
+
     section.about p {
+        padding-top: 5rem;
+        padding-bottom: 10rem;
         font-size: 1.8rem;
-        width: 50%;
-        margin: 0 auto;
-        height: 100vh;
-
     }
 
-    section.about span {
-        padding: 2rem;
-
+    div.about-container div {
+        margin-top: 6rem;
     }
 
-    section.about div {
-        width: 50%;
-        margin: 0 auto;
-    }
 
-    section.about div {
-        height: 60vh;
 
-    }
 
-    section.about img {
-        height: 100%;
-        object-fit: contain;
-    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     /* support.html */
@@ -484,6 +524,15 @@ footer p span {
 
     /* contact.html */
 
+    div.contact .contact-info{
+        width: 60%;
+        margin:0 auto;
+        border-bottom:2px solid red;
+        padding-top:8rem;
+        padding-bottom:4rem;
+    }
+
+
     div.contact h1 {
         font-size: 4rem;
     }
@@ -493,18 +542,22 @@ footer p span {
         display: inline;
     }
 
-  
+
 
     /* footer */
 
-    footer {
-        padding: 1rem;
-        padding-top: 2rem;
+    
 
+
+}
+
+@media screen and (min-width:992px) {
+
+    .navbar-nav {
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
     }
 
-    footer i {
-        margin-right: 1.5rem;
-    }
 
 }
