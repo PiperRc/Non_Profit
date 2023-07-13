@@ -37,13 +37,13 @@ import Template from "../layouts/Template.astro";
 <h1>OR Fill out the form below</h1>
 
 <label for="name">Name*</label>
-<input type="text" id="name" required placeholder="Name">
+<input type="text" id="name" required placeholder="Name" name="name">
 
 <label for="email">Email*</label>
-<input type="text" id="email" required placeholder="Email">
+<input type="text" id="email" required placeholder="Email" name="email">
 
 <label for="message">Message*</label>
-<textarea name="messafge" id="" cols="30" rows="10" required placeholder="Message*"></textarea>
+<textarea name="message" id="" cols="30" rows="10" required placeholder="Message*"></textarea>
 
 <input type="hidden" name="redirect" value="https://charlenecottleworldfoundation.netlify.app/form_success">
 <button>
