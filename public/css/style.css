@@ -371,8 +371,7 @@ div.support-details section:nth-child(4) p {
 }
 
 /* news.html */
-div.news-html,
-div.contact {
+div.news-html {
     height: 100vh;
 }
 
@@ -481,6 +480,76 @@ p.personal-website {
     font-weight: bold;
     font-size: 1.2rem;
     padding-top: 1rem;
+}
+
+.contact form{
+    background-color: #254151;
+    padding:2.6rem;
+    
+   
+}
+.contact form label{
+    color:white;
+    font-weight: bold;
+    width: 100%;
+    font-size: 2rem;
+}
+.contact form input,
+.contact form textarea{
+    width: 100%;
+    font-size: 2rem;
+}
+
+.contact form h1{
+color:white;
+}
+
+.contact button {
+    margin-top: 3rem;
+    padding: 1.5rem;
+    font-size: 2rem;
+    font-weight: bold;
+    width: 50%;
+    max-width: 20rem;
+    background-color: white;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+}
+
+.contact button::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color:lightgoldenrodyellow;
+    z-index: -1;
+    transform: scaleX(0);
+    transition: .2s ease-in;
+    transform-origin: left;
+}
+
+.contact button:hover::before {
+    transform: scaleX(1);
+}
+
+
+.fa-location-dot,
+.fa-phone-volume,
+.fa-globe,
+.fa-envelope,
+.fa-user {
+    animation: spin 3s;
+    transform-style: preserve-3d;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotateY(0deg);
+    }
+
+    100% {
+        transform: rotateY(360deg);
+    }
 }
 
 
@@ -680,22 +749,7 @@ p.personal-website {
     }
 
 
-    .fa-location-dot,
-    .fa-phone-volume {
-        animation: spin 3s;
-        transform-style: preserve-3d;
-    }
-
-    @keyframes spin {
-        0% {
-            transform: rotateY(0deg);
-        }
-
-        100% {
-            transform: rotateY(360deg);
-        }
-    }
-
+ 
 
     /* footer */
     footer {
